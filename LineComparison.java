@@ -31,9 +31,11 @@ public class LineComparison {
 		double l2= Math.sqrt((a2-a1)*(a2-a1)+(b2-b1)*(b2-b1));
 		
 		if (l1 == l2)
-			System.out.println("Lines are equal");
+			System.out.println("Both Lines are equal");
+		else if (l1 > l2)
+			System.out.println("First line is greater than second");
 		else
-			System.out.println("Lines are not equal");
+			System.out.println("First line is smaller than second");
 	}
 
 }
