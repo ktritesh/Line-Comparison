@@ -30,12 +30,18 @@ public class LineComparison {
 		
 		double l2= Math.sqrt((a2-a1)*(a2-a1)+(b2-b1)*(b2-b1));
 		
-		if (l1 == l2)
-			System.out.println("Both Lines are equal");
-		else if (l1 > l2)
-			System.out.println("First line is greater than second");
-		else
-			System.out.println("First line is smaller than second");
+		Double line1 = new Double(l1);
+		Double line2 = new Double(l2);
+		boolean ifEqual = line1.equals(line2);
+		if (ifEqual)
+			System.out.println("Both Lines are Equal");
+		else {
+			int compare = line1.compareTo(line2);
+			if (compare > 0)
+				System.out.println("Line 1 is larger.");
+			else
+				System.out.println("Line 2 is larger.");
+		}
 	}
 
 }
