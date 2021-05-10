@@ -36,6 +36,10 @@ public class LineComparison {
 		//Computation
 		double l2= Math.sqrt((a2-a1)*(a2-a1)+(b2-b1)*(b2-b1));
 		
+		if (l1 == l2)
+			System.out.println("Lines are equal");
+		else
+			System.out.println("Lines are not equal");
 		Double line1 = new Double(l1);
 		Double line2 = new Double(l2);
 		boolean equal = line1.equals(line2);
@@ -47,7 +51,6 @@ public class LineComparison {
 
 	public static void main(String[] args) {
 		comparelength();
-
 	}
 
 }
