@@ -31,9 +31,9 @@ public class LineComparison {
 		double l2= Math.sqrt((a2-a1)*(a2-a1)+(b2-b1)*(b2-b1));
 		
 		if (l1 == l2)
-			System.out.println("Lines are equal");
+			System.out.println("Lines are equal.");
 		else
-			System.out.println("Lines are not equal");
+			System.out.println("Lines are not equal.");
 	}
 
 }
