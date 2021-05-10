@@ -38,16 +38,19 @@ public class LineComparison {
 		
 		Double line1 = new Double(l1);
 		Double line2 = new Double(l2);
-		boolean equal = line1.equals(line2);
-		if (equal)
-			System.out.println("Lines are Equal");
-		else
-			System.out.println("Lines are Not Equal");
-	}
+		boolean ifEqual = line1.equals(line2);
+		if (ifEqual)
+			System.out.println("Both Lines are Equal");
+		else {
+			int compare = line1.compareTo(line2);
+			if (compare > 0)
+				System.out.println("Line 1 is larger.");
+			else
+				System.out.println("Line 2 is larger.");
+		}
 
 	public static void main(String[] args) {
 		comparelength();
-
 	}
 
 }
