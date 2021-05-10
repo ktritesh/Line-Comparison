@@ -6,7 +6,7 @@ public class LineComparison {
 	public static void comparelength() {
 		
 		//creating object of scanner class
-		Scanner sc=new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		
 		//taking value from users using scanner class for first line
 		System.out.println("Enter Co-Oridinates for 1st Line");
@@ -36,12 +36,13 @@ public class LineComparison {
 		//Computation
 		double l2= Math.sqrt((a2-a1)*(a2-a1)+(b2-b1)*(b2-b1));
 		
-		if (l1 == l2)
-			System.out.println("Both Lines are equal");
-		else if (l1 > l2)
-			System.out.println("First line is greater than second");
+		Double line1 = new Double(l1);
+		Double line2 = new Double(l2);
+		boolean equal = line1.equals(line2);
+		if (equal)
+			System.out.println("Lines are Equal");
 		else
-			System.out.println("First line is smaller than second");
+			System.out.println("Lines are Not Equal");
 	}
 
 	public static void main(String[] args) {
